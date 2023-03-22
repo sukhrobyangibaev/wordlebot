@@ -139,3 +139,5 @@ dmypy.json
 cython_debug/
 
 .idea/
+
+dota_data_bot.log

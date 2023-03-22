@@ -58,7 +58,9 @@ DEFAULT_ATTEMPTS = 6
 DEVELOPER_CHAT_ID = '1476403327'
 
 logging.basicConfig(
-    format="[%(asctime)s > %(levelname)s > %(name)s] %(message)s", level=logging.INFO
+    filename='dota_data_bot.log',
+    format="[%(asctime)s > %(levelname)s > %(name)s] %(message)s",
+    level=logging.INFO
 )
 logger = logging.getLogger(__name__)
 
