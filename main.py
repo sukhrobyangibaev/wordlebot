@@ -1,3 +1,4 @@
+import os
 import html
 import json
 import traceback
@@ -242,7 +243,7 @@ async def handle_help_command(update: Update, context: ContextTypes.DEFAULT_TYPE
 
 
 def main() -> None:
-    application = Application.builder().token("5725942411:AAHp_Vx7sm6ueTdqprhW6mFu39iEl225AZA").build()
+    application = Application.builder().token(os.environ['TOKEN']).build()
 
     conv_handler = ConversationHandler(
         entry_points=[CommandHandler("start", start)],
